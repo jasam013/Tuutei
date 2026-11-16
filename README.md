@@ -82,8 +82,8 @@ The OpenClaw agent may only choose from the actions Tūtei offers, and Tūtei, n
 Requires **Node.js 20 or newer**.
 
 ```bash
-git clone https://github.com/<your-account>/tutei.git
-cd tutei
+git clone https://github.com/jasam013/Tuutei.git
+cd Tuutei
 npm install
 npm run dev
 ```
@@ -136,7 +136,7 @@ node server/openclaw-check.js
 On CT 204 (Debian, Node.js 20):
 
 ```bash
-git clone https://github.com/<your-account>/tutei.git /opt/tutei
+git clone https://github.com/jasam013/Tuutei.git /opt/tutei
 cd /opt/tutei && npm ci && npm run build
 ```
 
