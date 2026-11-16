@@ -1,4 +1,4 @@
-// HTTP client for the orchestration layer (OpenClaw on CT 201, reached over WireGuard).
+// HTTP client for the orchestration layer (Tūtei's server on CT 204, reached over the tailnet).
 // The contract is in API.md. Every call has a timeout so a slow or silent agent
 // becomes a clear error state instead of a spinner that never ends.
 import { ApiError } from '../mock/backend.js';
@@ -31,7 +31,7 @@ export function httpApi(base, timeoutMs) {
 			if (/** @type {any} */ (e)?.name === 'AbortError') {
 				throw new ApiError('TIMEOUT', `No answer from the agent within ${Math.round(limit / 1000)} seconds`, 504);
 			}
-			throw new ApiError('NETWORK', 'Cannot reach the agent. Check your connection and the WireGuard tunnel.', 0);
+			throw new ApiError('NETWORK', 'Cannot reach Tūtei’s server. Check your connection and that Tailscale is on.', 0);
 		} finally {
 			clearTimeout(timer);
 		}

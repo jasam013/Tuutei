@@ -251,7 +251,7 @@
 
 	<section class="card stack" aria-labelledby="ai-h">
 		<h2 id="ai-h">AI confidence threshold: {pct(settings.threshold)}</h2>
-		<input type="range" min="0.5" max="0.95" step="0.05" bind:value={settings.threshold} aria-describedby="thr-help" />
+		<input type="range" min="0.5" max="0.95" step="0.05" bind:value={settings.threshold} aria-labelledby="ai-h" aria-describedby="thr-help" />
 		<p id="thr-help" class="small muted">Below this, Tūtei marks the alert “Needs human review” and hides the suggested action.</p>
 	</section>
 
