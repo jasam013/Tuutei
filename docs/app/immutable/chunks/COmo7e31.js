@@ -1,0 +1,1 @@
+import{I as n}from"./H9X5Knpx.js";const d="(min-width: 768px) and (min-height: 600px)",i=n({wide:!1});if(typeof window<"u"){const e=matchMedia(d);i.wide=e.matches,e.addEventListener("change",t=>i.wide=t.matches)}export{i as v};
