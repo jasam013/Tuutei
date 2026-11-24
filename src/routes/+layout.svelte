@@ -9,6 +9,7 @@
 	import { settings, persistSettings, me } from '$lib/settings.svelte.js';
 	import { app, toasts, refreshAlerts, refreshApprovals } from '$lib/state.svelte.js';
 	import { evalPrefs } from '$lib/eval.svelte.js';
+	import Study from '$lib/components/Study.svelte';
 
 	let { children } = $props();
 
@@ -106,6 +107,8 @@
 		{@render children()}
 	</main>
 {/if}
+
+<Study />
 
 <nav class="tabs" class:rail={viewport.wide} aria-label="Main" style:--hdr="{headerH}px">
 	{#each tabs as tab}

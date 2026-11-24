@@ -10,7 +10,7 @@ export const EVAL_FIELDS = ['ts', 'participant', 'task', 'role', 'event', 'alert
 const EVENTS = new Set([
 	'session_started', 'task_changed', 'alert_notified', 'alert_opened', 'triage_shown', 'state_shown',
 	'evidence_viewed', 'briefing_played', 'briefing_stopped', 'decision_made', 'signoff_decided',
-	'retry_clicked', 'kb_opened', 'suggestion_revealed'
+	'retry_clicked', 'kb_opened', 'suggestion_revealed', 'study_task_done'
 ]);
 const MAX_ROWS = 50_000;
 

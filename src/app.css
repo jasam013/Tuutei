@@ -251,3 +251,8 @@ pre {
 		transition-duration: 0.01ms !important;
 	}
 }
+
+/* Remote study mode: room for the task card above the tab bar. */
+body.study-tasks main {
+	padding-bottom: 96px;
+}
