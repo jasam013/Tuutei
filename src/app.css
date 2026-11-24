@@ -256,3 +256,10 @@ pre {
 body.study-tasks main {
 	padding-bottom: 96px;
 }
+
+/* iOS Safari zooms in on any form field under 16px and stays zoomed; keep fields at 16px or more. */
+input,
+select,
+textarea {
+	font-size: max(16px, 1em);
+}
