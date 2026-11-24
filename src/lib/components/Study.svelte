@@ -264,6 +264,7 @@
 			{#if task.action === 'send' && !sent}
 				<button class="btn primary" disabled={busy} onclick={sendAlert}>Send the alert</button>
 			{:else}
+				{#if task.open}<a class="btn small" href="#/alerts/{task.open}" onclick={() => (study.collapsed = true)}>Open this alert</a>{/if}
 				<p class="small muted">{task.done}</p>
 				{#if task.recall}<textarea bind:value={recall} rows="2" placeholder="What did the briefing say?" aria-label="What did the briefing say?"></textarea>{/if}
 				{#if !pendingOutcome}

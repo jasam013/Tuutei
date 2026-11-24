@@ -20,31 +20,34 @@ export const STUDY_TASKS = [
 		id: 'T2',
 		title: 'Act on a Confident alert',
 		text: 'Open “Impossible travel sign-in” (Kōwhai Health). Decide what should happen and submit your decision.',
+		open: 'ALR-1042',
 		done: 'Tap “I’ve done it” once your decision is submitted.'
 	},
 	{
 		id: 'T3',
 		title: 'Act on an Unsure alert',
 		text: 'Open “VPN brute force, then success” (Awanui District Council). Decide what should happen and submit your decision.',
+		open: 'ALR-1040',
 		done: 'Tap “I’ve done it” once your decision is submitted.'
 	},
 	{
 		id: 'T4',
 		title: 'An alert the AI could not answer',
 		text: 'Open “Traffic to newly registered domain”. Deal with it however you think best.',
+		open: 'ALR-1038',
 		done: 'Tap “I’ve done it” when you have a verdict or have decided what to do.'
 	},
 	{
 		id: 'T5',
 		title: 'Listen to a briefing',
-		text: 'Open any alert and play its spoken briefing. Try to listen without looking at the screen.',
+		text: 'Check your phone is not on silent (iPhone: the switch on the side). Open any alert, play its spoken briefing, and try to listen without looking at the screen.',
 		done: 'Then write in the box below what the briefing told you.',
 		recall: true
 	},
 	{
 		id: 'T6',
 		title: 'Sign-off as a senior',
-		text: 'You are now Jason, a senior analyst. A junior has asked you to approve a decision. Send it back with a comment explaining why.',
+		text: 'You are now Jason, a senior analyst. A junior has asked you to approve a decision. Do not approve it: send it back to them with a comment saying why.',
 		done: 'Tap “I’ve done it” once it has been sent back.',
 		action: 'senior'
 	},
@@ -52,6 +55,7 @@ export const STUDY_TASKS = [
 		id: 'T7',
 		title: 'Find a past resolution',
 		text: 'On the alert “VPN brute force, then success”, find how this customer resolved a similar alert before, and open that record.',
+		open: 'ALR-1040',
 		done: 'Tap “I’ve done it” once the record is open.'
 	}
 ];
@@ -73,7 +77,7 @@ export const TLX_ITEMS = [
 	['mental', 'Mental demand', 'How mentally demanding were the tasks?', 'Very low', 'Very high'],
 	['physical', 'Physical demand', 'How physically demanding were the tasks?', 'Very low', 'Very high'],
 	['temporal', 'Temporal demand', 'How hurried or rushed was the pace?', 'Very low', 'Very high'],
-	['performance', 'Performance', 'How successful were you at what you were asked to do?', 'Perfect', 'Failure'],
+	['performance', 'Performance', 'How successful were you at what you were asked to do? (Low is good on this one.)', 'Perfect', 'Failure'],
 	['effort', 'Effort', 'How hard did you have to work to reach your level of performance?', 'Very low', 'Very high'],
 	['frustration', 'Frustration', 'How insecure, discouraged, irritated, stressed or annoyed were you?', 'Very low', 'Very high']
 ];

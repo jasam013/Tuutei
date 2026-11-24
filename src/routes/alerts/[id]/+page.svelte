@@ -371,6 +371,7 @@
 								<p class="small">{s.resolution}</p>
 								{#if s.note}<p class="small muted">“{s.note}”</p>{/if}
 								<p class="small muted">{s.analyst}{s.approver ? `, signed off by ${s.approver}` : ''} · {day(s.resolvedAt)}</p>
+								<a class="btn small open-rec" href="#/kb/{s.id}">Open full record ›</a>
 							</li>
 						{/each}
 					</ul>
@@ -600,5 +601,9 @@
 			transform: scale(0.6);
 			opacity: 0.5;
 		}
+	}
+	.open-rec {
+		align-self: flex-start;
+		margin-top: 4px;
 	}
 </style>
